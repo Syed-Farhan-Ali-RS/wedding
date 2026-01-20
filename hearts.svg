@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="hearts-bg">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Heart 1 -->
+  <path d="M15,30 C15,25 20,20 25,25 C30,20 35,25 35,30 C35,40 25,50 25,50 C25,50 15,40 15,30" fill="#D4AF37" opacity="0.6" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="4s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,100; 0,-20" dur="8s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Heart 2 -->
+  <path d="M60,40 C60,35 65,30 70,35 C75,30 80,35 80,40 C80,50 70,60 70,60 C70,60 60,50 60,40" fill="#D4AF37" opacity="0.5" filter="url(#glow)" transform="scale(0.8)">
+    <animate attributeName="opacity" values="0.2;0.6;0.2" dur="5s" repeatCount="indefinite" begin="1s"/>
+    <animateTransform attributeName="transform" type="translate" values="10,120; 10,0" dur="10s" repeatCount="indefinite" begin="1s"/>
+  </path>
+  
+  <!-- Heart 3 -->
+  <path d="M40,50 C40,45 45,40 50,45 C55,40 60,45 60,50 C60,60 50,70 50,70 C50,70 40,60 40,50" fill="#D4AF37" opacity="0.4" filter="url(#glow)" transform="scale(0.6)">
+    <animate attributeName="opacity" values="0.2;0.5;0.2" dur="6s" repeatCount="indefinite" begin="2s"/>
+    <animateTransform attributeName="transform" type="translate" values="20,130; 20,-10" dur="12s" repeatCount="indefinite" begin="2s"/>
+  </path>
+  
+  <!-- Heart 4 -->
+  <path d="M80,35 C80,30 85,25 90,30 C95,25 100,30 100,35 C100,45 90,55 90,55 C90,55 80,45 80,35" fill="#D4AF37" opacity="0.5" filter="url(#glow)" transform="scale(0.5)">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="4.5s" repeatCount="indefinite" begin="0.5s"/>
+    <animateTransform attributeName="transform" type="translate" values="-30,110; -30,-5" dur="9s" repeatCount="indefinite" begin="0.5s"/>
+  </path>
+  
+  <!-- Heart 5 -->
+  <path d="M5,45 C5,40 10,35 15,40 C20,35 25,40 25,45 C25,55 15,65 15,65 C15,65 5,55 5,45" fill="#D4AF37" opacity="0.4" filter="url(#glow)" transform="scale(0.7)">
+    <animate attributeName="opacity" values="0.2;0.5;0.2" dur="7s" repeatCount="indefinite" begin="3s"/>
+    <animateTransform attributeName="transform" type="translate" values="0,115; 0,5" dur="11s" repeatCount="indefinite" begin="3s"/>
+  </path>
+</svg>
