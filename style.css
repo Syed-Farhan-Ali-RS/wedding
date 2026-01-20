@@ -391,11 +391,18 @@ h2 {
     color: var(--gold);
 }
 
+/* Detail Row for Date/Time */
+.detail-row {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 15px;
+}
+
 /* Hosts Section */
 .hosts-section {
     margin-top: 40px;
     padding-top: 30px;
-    border-top: 1px solid rgba(212, 175, 55, 0.2);
 }
 
 .hosts-title {
