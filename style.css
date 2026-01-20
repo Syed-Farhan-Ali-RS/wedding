@@ -1,11 +1,18 @@
 :root {
-    --gold: #D4AF37;
-    --gold-dim: #C5A028;
-    --cream: #1e1e1e;
-    /* Dark mode base */
-    --cream-light: #2a2a2a;
-    --text-main: #EAEAEA;
-    --text-accent: #D4AF37;
+    --gold: #6A1B9A;
+    /* Changed to Purple */
+    --gold-dim: #8E24AA;
+    /* Lighter Purple */
+    --cream: #E8F5E9;
+    /* Pista Light Background */
+    /* Light mode base for card */
+    --cream-light: #FFFFFF;
+    --text-main: #4A148C;
+    /* Dark Purple Text */
+    --text-accent: #6A1B9A;
+    /* Purple Accent */
+    --heart-color: #E91E63;
+    /* Heart Color */
     --font-heading: 'Cinzel Decorative', cursive;
     --font-script: 'Great Vibes', cursive;
     --font-body: 'Cormorant Garamond', serif;
@@ -37,8 +44,8 @@ body {
     width: 100%;
     height: 100%;
     background-image:
-        radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.05) 0%, transparent 60%),
-        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4af37' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        radial-gradient(circle at 50% 50%, rgba(106, 27, 154, 0.05) 0%, transparent 60%),
+        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236A1B9A' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     z-index: -1;
 }
 
@@ -100,9 +107,10 @@ body {
 .envelope {
     width: 600px;
     height: 400px;
-    background: #1a1a1a;
+    background: #4A148C;
+    /* Dark Purple Envelope */
     position: relative;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     perspective: 1500px;
     overflow: hidden;
     /* Hide the card overflow */
@@ -114,12 +122,13 @@ body {
     left: 0;
     width: 100%;
     height: 50%;
-    background: #252525;
+    background: #6A1B9A;
+    /* Lighter Purple Lid */
     transform-origin: top;
     transition: transform 0.8s ease-in-out, z-index 0s 0.4s;
     z-index: 10;
     clip-path: polygon(0 0, 100% 0, 50% 100%);
-    border-top: 1px solid rgba(212, 175, 55, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .lid.open {
@@ -134,10 +143,10 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #1e1e1e, #181818);
+    background: linear-gradient(135deg, #4A148C, #38006b);
     clip-path: polygon(0 0, 50% 50%, 100% 0, 100% 100%, 0 100%);
     z-index: 5;
-    border: 1px solid rgba(212, 175, 55, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Card inside envelope */
@@ -148,7 +157,7 @@ body {
     width: 90%;
     height: 90%;
     background: var(--cream-light);
-    border: 1px solid rgba(212, 175, 55, 0.3);
+    border: 1px solid rgba(106, 27, 154, 0.3);
     border-radius: 4px;
     /* Sharper corners for inside card */
     padding: 20px;
@@ -189,7 +198,7 @@ body {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    color: var(--gold);
+    color: var(--heart-color);
     font-size: 0.9rem;
     z-index: 20;
     animation: blink 2s infinite;
@@ -545,7 +554,7 @@ h2 {
 
 .parents-line {
     font-size: 1.1rem;
-    color: #ccc;
+    color: #555;
 }
 
 .parents-line strong {
@@ -634,7 +643,7 @@ p {
     line-height: 1.8;
     margin-bottom: 20px;
     font-size: 1.1rem;
-    color: #ccc;
+    color: #444;
 }
 
 .arabic-verse {
@@ -683,7 +692,7 @@ p {
 .venue-link {
     color: inherit;
     text-decoration: none;
-    border-bottom: 1px dashed var(--gold);
+    border-bottom: 1px dashed var(--heart-color);
     transition: opacity 0.3s;
 }
 
@@ -696,8 +705,8 @@ p {
     margin-top: 25px;
     /* Reduced margin */
     background: transparent;
-    border: 1px solid var(--gold);
-    color: var(--gold);
+    border: 1px solid var(--heart-color);
+    color: var(--heart-color);
     padding: 12px 30px;
     font-family: var(--font-heading);
     font-size: 1rem;
@@ -708,9 +717,9 @@ p {
 }
 
 .rsvp-btn:hover {
-    background: var(--gold);
-    color: var(--cream);
-    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+    background: var(--heart-color);
+    color: #fff;
+    box-shadow: 0 0 15px rgba(233, 30, 99, 0.4);
 }
 
 /* Animations */
