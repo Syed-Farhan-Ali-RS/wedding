@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation - Syed Farhan Ali & Bareera Zafar</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="bg-pattern"></div>
+
+    <div class="container">
+        <div class="envelope-wrapper" id="envelopeWrapper">
+            <div class="envelope">
+                <div class="lid" id="lid"></div>
+                <div class="pocket"></div>
+                <div class="click-hint" id="hint">Click to Open</div>
+
+                <div class="card" id="mainCard">
+                    <!-- Decorative Corners -->
+                    <div class="corner corner-tl"></div>
+                    <div class="corner corner-tr"></div>
+                    <div class="corner corner-bl"></div>
+                    <div class="corner corner-br"></div>
+
+                    <!-- Bismillah Calligraphy (SVG) -->
+                    <div class="header-ornament">
+                        <svg class="svg-pattern" width="200" height="60" viewBox="0 0 300 100" fill="none"
+                            stroke="#D4AF37" stroke-width="2">
+                            <!-- Stylized Bismillah Abstract Representation -->
+                            <path d="M150,20 Q180,10 210,30 T270,40 M150,20 Q120,10 90,30 T30,40"
+                                stroke-linecap="round" />
+                            <path d="M150,30 Q150,80 150,80 M140,50 Q160,50 160,50" opacity="0.8" />
+                            <!-- Decorative flourishes -->
+                            <path d="M100,50 C100,70 130,90 150,90 C170,90 200,70 200,50" opacity="0.6" />
+                        </svg>
+                    </div>
+
+                    <div class="content">
+                        <div class="arabic-verse reveal-text delay-1">
+                            وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا
+                            وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً
+                        </div>
+                        <div class="verse-translation reveal-text delay-1">
+                            "And among His Signs is this, that He created for you mates from among yourselves, that ye
+                            may dwell in tranquillity with them, and He has put love and mercy between your (hearts)..."
+                            <br>— Surah Ar-Rum 30:21
+                        </div>
+
+                        <div class="invitation-text reveal-text delay-2">
+                            <p>Together with their families</p>
+                            <h2>WE CORDIALLY INVITE YOU TO THE WEDDING OF</h2>
+                        </div>
+
+                        <div class="names-container reveal-text delay-3">
+                            <h1>Syed Farhan Ali</h1>
+                            <div class="and-symbol">&</div>
+                            <h1>Bareera Zafar</h1>
+                        </div>
+
+                        <div class="details reveal-text delay-4">
+                            <div class="detail-item">
+                                <span class="detail-label">Date</span>
+                                <p>Sunday, December 25th, 2026</p>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Time</span>
+                                <p>Reception: 7:00 PM | Dinner: 8:00 PM</p>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Venue</span>
+                                <p>Grand Palace Marquee</p>
+                                <p style="font-size: 0.9em; opacity: 0.7;">Main Boulevard, Lahore</p>
+                            </div>
+                        </div>
+
+                        <a href="http://wa.me/+923022223000" target="_blank"
+                            class="rsvp-btn reveal-text delay-5">R.S.V.P</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const envelopeWrapper = document.getElementById('envelopeWrapper');
+            const lid = document.getElementById('lid');
+            const card = document.getElementById('mainCard');
+            const hint = document.getElementById('hint');
+
+            envelopeWrapper.addEventListener('click', () => {
+                if (!envelopeWrapper.classList.contains('opened')) {
+                    // 1. Open Lid
+                    lid.classList.add('open');
+                    hint.style.opacity = '0';
+
+                    // 2. Slide Card Out
+                    setTimeout(() => {
+                        card.classList.add('open');
+
+                        // 3. Complete Transition - Move card to normal flow
+                        setTimeout(() => {
+                            envelopeWrapper.classList.add('opened');
+                            // Force a redraw or layout adjustment if needed
+                        }, 1200); // Slightly longer than the CSS transition
+
+                    }, 600);
+                }
+            });
+        </script>
+</body>
+
+</html>

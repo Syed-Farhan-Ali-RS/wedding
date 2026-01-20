@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <pattern id="pattern" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M50 0 L100 50 L50 100 L0 50 Z" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.5"/>
+    </pattern>
+    <symbol id="petal" viewBox="0 0 100 100">
+        <path d="M50 100 C20 80 0 50 50 0 C100 50 80 80 50 100" fill="none" stroke="#D4AF37" stroke-width="1" />
+        <path d="M50 80 C40 70 30 50 50 20 C70 50 60 70 50 80" fill="none" stroke="#D4AF37" stroke-width="0.5" />
+    </symbol>
+  </defs>
+  
+  <g transform="translate(250,250)">
+    <!-- Layer 1 -->
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#D4AF37" stroke-width="2" />
+    
+    <!-- Layer 2: Petals -->
+    <g id="petals-1">
+        <use href="#petal" x="-50" y="-100" width="100" height="100" transform="rotate(0)" />
+        <use href="#petal" x="-50" y="-100" width="100" height="100" transform="rotate(45)" />
+        <use href="#petal" x="-50" y="-100" width="100" height="100" transform="rotate(90)" />
+        <use href="#petal" x="-50" y="-100" width="100" height="100" transform="rotate(135)" />
+        <use href="#petal" x="-50" y="-100" width="100" height="100" transform="rotate(180)" />
+        <use href="#petal" x="-50" y="-100" width="100" height="100" transform="rotate(225)" />
+        <use href="#petal" x="-50" y="-100" width="100" height="100" transform="rotate(270)" />
+        <use href="#petal" x="-50" y="-100" width="100" height="100" transform="rotate(315)" />
+    </g>
+
+    <!-- Layer 3: Outer Geometric Rings -->
+    <circle cx="0" cy="0" r="150" fill="none" stroke="#D4AF37" stroke-width="1" stroke-dasharray="5,5"/>
+    <circle cx="0" cy="0" r="180" fill="none" stroke="#D4AF37" stroke-width="0.5" />
+    
+    <!-- Layer 4: Outer Petals -->
+    <g transform="rotate(22.5)">
+        <use href="#petal" x="-50" y="-200" width="100" height="100" transform="rotate(0) scale(1.5)" />
+        <use href="#petal" x="-50" y="-200" width="100" height="100" transform="rotate(45) scale(1.5)" />
+        <use href="#petal" x="-50" y="-200" width="100" height="100" transform="rotate(90) scale(1.5)" />
+        <use href="#petal" x="-50" y="-200" width="100" height="100" transform="rotate(135) scale(1.5)" />
+        <use href="#petal" x="-50" y="-200" width="100" height="100" transform="rotate(180) scale(1.5)" />
+        <use href="#petal" x="-50" y="-200" width="100" height="100" transform="rotate(225) scale(1.5)" />
+        <use href="#petal" x="-50" y="-200" width="100" height="100" transform="rotate(270) scale(1.5)" />
+        <use href="#petal" x="-50" y="-200" width="100" height="100" transform="rotate(315) scale(1.5)" />
+    </g>
+  </g>
+</svg>
