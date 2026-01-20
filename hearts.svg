@@ -10,49 +10,49 @@
   </defs>
   
   <!-- Small Heart 1 -->
-  <path d="M50,580 C50,575 55,570 60,575 C65,570 70,575 70,580 C70,590 60,600 60,600 C60,600 50,590 50,580" fill="#E91E63" opacity="0" filter="url(#glow)">
+  <path d="M50,580 C50,575 55,570 60,575 C65,570 70,575 70,580 C70,590 60,600 60,600 C60,600 50,590 50,580" fill="#1B5E20" opacity="0" filter="url(#glow)">
     <animate attributeName="opacity" values="0;0.7;0.5;0" dur="4s" repeatCount="indefinite"/>
     <animateTransform attributeName="transform" type="translate" values="0,0; 10,-550" dur="4s" repeatCount="indefinite"/>
   </path>
   
   <!-- Small Heart 2 -->
-  <path d="M120,590 C120,585 125,580 130,585 C135,580 140,585 140,590 C140,600 130,610 130,610 C130,610 120,600 120,590" fill="#E91E63" opacity="0" filter="url(#glow)">
+  <path d="M120,590 C120,585 125,580 130,585 C135,580 140,585 140,590 C140,600 130,610 130,610 C130,610 120,600 120,590" fill="#1B5E20" opacity="0" filter="url(#glow)">
     <animate attributeName="opacity" values="0;0.6;0.4;0" dur="5s" repeatCount="indefinite" begin="0.5s"/>
     <animateTransform attributeName="transform" type="translate" values="0,0; -15,-560" dur="5s" repeatCount="indefinite" begin="0.5s"/>
   </path>
   
   <!-- Small Heart 3 -->
-  <path d="M200,585 C200,580 205,575 210,580 C215,575 220,580 220,585 C220,595 210,605 210,605 C210,605 200,595 200,585" fill="#E91E63" opacity="0" filter="url(#glow)">
+  <path d="M200,585 C200,580 205,575 210,580 C215,575 220,580 220,585 C220,595 210,605 210,605 C210,605 200,595 200,585" fill="#1B5E20" opacity="0" filter="url(#glow)">
     <animate attributeName="opacity" values="0;0.65;0.45;0" dur="4.5s" repeatCount="indefinite" begin="1s"/>
     <animateTransform attributeName="transform" type="translate" values="0,0; 5,-540" dur="4.5s" repeatCount="indefinite" begin="1s"/>
   </path>
   
   <!-- Small Heart 4 -->
-  <path d="M280,595 C280,590 285,585 290,590 C295,585 300,590 300,595 C300,605 290,615 290,615 C290,615 280,605 280,595" fill="#E91E63" opacity="0" filter="url(#glow)">
+  <path d="M280,595 C280,590 285,585 290,590 C295,585 300,590 300,595 C300,605 290,615 290,615 C290,615 280,605 280,595" fill="#1B5E20" opacity="0" filter="url(#glow)">
     <animate attributeName="opacity" values="0;0.55;0.35;0" dur="5.5s" repeatCount="indefinite" begin="1.5s"/>
     <animateTransform attributeName="transform" type="translate" values="0,0; -10,-570" dur="5.5s" repeatCount="indefinite" begin="1.5s"/>
   </path>
   
   <!-- Small Heart 5 -->
-  <path d="M350,588 C350,583 355,578 360,583 C365,578 370,583 370,588 C370,598 360,608 360,608 C360,608 350,598 350,588" fill="#E91E63" opacity="0" filter="url(#glow)">
+  <path d="M350,588 C350,583 355,578 360,583 C365,578 370,583 370,588 C370,598 360,608 360,608 C360,608 350,598 350,588" fill="#1B5E20" opacity="0" filter="url(#glow)">
     <animate attributeName="opacity" values="0;0.6;0.4;0" dur="4.2s" repeatCount="indefinite" begin="2s"/>
     <animateTransform attributeName="transform" type="translate" values="0,0; 8,-555" dur="4.2s" repeatCount="indefinite" begin="2s"/>
   </path>
   
   <!-- Small Heart 6 -->
-  <path d="M80,592 C80,587 85,582 90,587 C95,582 100,587 100,592 C100,602 90,612 90,612 C90,612 80,602 80,592" fill="#E91E63" opacity="0" filter="url(#glow)">
+  <path d="M80,592 C80,587 85,582 90,587 C95,582 100,587 100,592 C100,602 90,612 90,612 C90,612 80,602 80,592" fill="#1B5E20" opacity="0" filter="url(#glow)">
     <animate attributeName="opacity" values="0;0.5;0.3;0" dur="6s" repeatCount="indefinite" begin="2.5s"/>
     <animateTransform attributeName="transform" type="translate" values="0,0; 12,-580" dur="6s" repeatCount="indefinite" begin="2.5s"/>
   </path>
   
   <!-- Small Heart 7 -->
-  <path d="M250,598 C250,593 255,588 260,593 C265,588 270,593 270,598 C270,608 260,618 260,618 C260,618 250,608 250,598" fill="#E91E63" opacity="0" filter="url(#glow)">
+  <path d="M250,598 C250,593 255,588 260,593 C265,588 270,593 270,598 C270,608 260,618 260,618 C260,618 250,608 250,598" fill="#1B5E20" opacity="0" filter="url(#glow)">
     <animate attributeName="opacity" values="0;0.55;0.35;0" dur="5.2s" repeatCount="indefinite" begin="3s"/>
     <animateTransform attributeName="transform" type="translate" values="0,0; -8,-545" dur="5.2s" repeatCount="indefinite" begin="3s"/>
   </path>
   
   <!-- Small Heart 8 -->
-  <path d="M320,582 C320,577 325,572 330,577 C335,572 340,577 340,582 C340,592 330,602 330,602 C330,602 320,592 320,582" fill="#E91E63" opacity="0" filter="url(#glow)">
+  <path d="M320,582 C320,577 325,572 330,577 C335,572 340,577 340,582 C340,592 330,602 330,602 C330,602 320,592 320,582" fill="#1B5E20" opacity="0" filter="url(#glow)">
     <animate attributeName="opacity" values="0;0.6;0.4;0" dur="4.8s" repeatCount="indefinite" begin="0.8s"/>
     <animateTransform attributeName="transform" type="translate" values="0,0; 6,-565" dur="4.8s" repeatCount="indefinite" begin="0.8s"/>
   </path>
