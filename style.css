@@ -431,6 +431,18 @@ body {
     }
 }
 
+/* Host Relation Label */
+.host-relation {
+    font-family: var(--font-heading);
+    font-size: 0.7rem;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    display: block;
+    margin-bottom: 2px;
+}
+
 
 /* Corner Ornaments using CSS gradients/masking or Pseudo elements */
 .corner {
