@@ -250,6 +250,8 @@ body {
 @media (max-width: 768px) {
     body {
         padding: 10px;
+        align-items: flex-start;
+        padding-top: 50px;
     }
 
     .container {
@@ -259,35 +261,44 @@ body {
     }
 
     .envelope {
-        width: 90vw;
-        height: 55vw;
-        max-width: 350px;
-        max-height: 230px;
+        width: 85vw;
+        height: 50vw;
+        max-width: 320px;
+        max-height: 190px;
     }
 
     .envelope-wrapper {
-        height: auto;
-        min-height: 55vw;
-        max-height: 230px;
+        height: 50vw;
+        max-height: 190px;
+        min-height: unset;
     }
 
     .envelope-wrapper.opened {
-        min-height: auto;
+        height: auto;
         max-height: none;
     }
 
     .envelope-wrapper.opened .card {
+        position: relative;
         width: 100%;
         max-width: 100%;
         left: 0;
-        padding: 40px 15px;
+        top: 0;
+        height: auto;
+        padding: 30px 15px;
         min-height: auto;
     }
 
     .card {
-        padding: 15px 10px;
-        min-height: auto;
+        padding: 12px 8px;
+        height: 88%;
+        min-height: unset;
         border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .card .content {
+        transform: scale(0.85);
     }
 
     h1 {
