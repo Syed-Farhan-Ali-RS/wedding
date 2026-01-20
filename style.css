@@ -85,12 +85,12 @@ body {
     cursor: pointer;
     transition: transform 0.3s ease;
     height: 400px;
-    /* Preserve space */
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 100%;
-    /* Flexible wrapper */
+    overflow: hidden;
+    /* Prevent card from showing outside */
 }
 
 .envelope-wrapper:hover {
@@ -104,6 +104,8 @@ body {
     position: relative;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     perspective: 1500px;
+    overflow: hidden;
+    /* Hide the card overflow */
 }
 
 .lid {
@@ -208,9 +210,14 @@ body {
 }
 
 /* Expanded Card Mode */
+.envelope-wrapper.opened {
+    overflow: visible;
+}
+
 .envelope-wrapper.opened .envelope {
     background: transparent;
     box-shadow: none;
+    overflow: visible;
 }
 
 .envelope-wrapper.opened .lid,
@@ -276,6 +283,7 @@ body {
     .envelope-wrapper.opened {
         height: auto;
         max-height: none;
+        overflow: visible;
     }
 
     .envelope-wrapper.opened .card {
