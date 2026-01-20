@@ -247,36 +247,168 @@ body {
     overflow: visible;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
     .container {
-        padding: 0;
+        padding: 10px;
         width: 100%;
         max-width: 100%;
     }
 
     .envelope {
         width: 90vw;
-        height: 60vw;
-        /* Aspect ratio for mobile */
+        height: 55vw;
+        max-width: 350px;
+        max-height: 230px;
     }
 
     .envelope-wrapper {
-        height: 60vw;
+        height: auto;
+        min-height: 55vw;
+        max-height: 230px;
+    }
+
+    .envelope-wrapper.opened {
+        min-height: auto;
+        max-height: none;
+    }
+
+    .envelope-wrapper.opened .card {
+        width: 100%;
+        max-width: 100%;
+        left: 0;
+        padding: 40px 15px;
+        min-height: auto;
     }
 
     .card {
-        padding: 20px;
-        min-height: 100vh;
-        /* Full screen on mobile */
-        border-radius: 0;
+        padding: 15px 10px;
+        min-height: auto;
+        border-radius: 4px;
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin: 3px 0;
+    }
+
+    h2 {
+        font-size: 1rem;
+        margin-top: 20px;
     }
 
     .arabic-verse {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        padding: 0 5px;
+    }
+
+    .verse-translation {
+        font-size: 0.8rem;
+        max-width: 95%;
+        margin-bottom: 25px;
+    }
+
+    .detail-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .detail-label {
+        font-size: 0.8rem;
+    }
+
+    .details p {
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+    }
+
+    .hosts-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .host-item a {
+        font-size: 0.85rem;
+    }
+
+    .co-hosts {
+        font-size: 0.8rem;
+    }
+
+    .rsvp-btn {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+        margin-top: 25px;
+    }
+
+    .corner {
+        width: 30px;
+        height: 30px;
+    }
+
+    .corner-tl,
+    .corner-tr {
+        top: 10px;
+    }
+
+    .corner-bl,
+    .corner-br {
+        bottom: 10px;
+    }
+
+    .corner-tl,
+    .corner-bl {
+        left: 10px;
+    }
+
+    .corner-tr,
+    .corner-br {
+        right: 10px;
+    }
+
+    .click-hint {
+        font-size: 0.75rem;
+        bottom: 10px;
+    }
+
+    .header-ornament svg {
+        width: 150px;
+        height: 45px;
+    }
+
+    .parents-line {
+        font-size: 0.95rem;
+    }
+}
+
+/* Extra small devices (iPhone SE, Galaxy S8, etc.) */
+@media (max-width: 375px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 0.9rem;
+    }
+
+    .arabic-verse {
+        font-size: 0.9rem;
+    }
+
+    .envelope {
+        width: 92vw;
+        height: 58vw;
+    }
+
+    .envelope-wrapper {
+        min-height: 58vw;
+    }
+
+    .envelope-wrapper.opened .card {
+        padding: 30px 12px;
     }
 }
 
