@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="hearts-bg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600" class="hearts-bg">
   <defs>
     <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -9,43 +9,51 @@
     </filter>
   </defs>
   
-  <!-- Heart 1 - Large -->
-  <g filter="url(#glow)">
-    <path d="M10,35 C10,25 20,15 30,25 C40,15 50,25 50,35 C50,55 30,75 30,75 C30,75 10,55 10,35" fill="#D4AF37" opacity="0.5">
-      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="5s" repeatCount="indefinite"/>
-      <animateTransform attributeName="transform" type="translate" values="0,120; 0,-30" dur="10s" repeatCount="indefinite"/>
-    </path>
-  </g>
+  <!-- Small Heart 1 -->
+  <path d="M50,580 C50,575 55,570 60,575 C65,570 70,575 70,580 C70,590 60,600 60,600 C60,600 50,590 50,580" fill="#D4AF37" opacity="0" filter="url(#glow)">
+    <animate attributeName="opacity" values="0;0.7;0.5;0" dur="4s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 10,-550" dur="4s" repeatCount="indefinite"/>
+  </path>
   
-  <!-- Heart 2 - Medium -->
-  <g filter="url(#glow)">
-    <path d="M55,40 C55,32 63,24 71,32 C79,24 87,32 87,40 C87,56 71,72 71,72 C71,72 55,56 55,40" fill="#D4AF37" opacity="0.4">
-      <animate attributeName="opacity" values="0.15;0.5;0.15" dur="7s" repeatCount="indefinite" begin="2s"/>
-      <animateTransform attributeName="transform" type="translate" values="-10,130; -10,-20" dur="12s" repeatCount="indefinite" begin="2s"/>
-    </path>
-  </g>
+  <!-- Small Heart 2 -->
+  <path d="M120,590 C120,585 125,580 130,585 C135,580 140,585 140,590 C140,600 130,610 130,610 C130,610 120,600 120,590" fill="#D4AF37" opacity="0" filter="url(#glow)">
+    <animate attributeName="opacity" values="0;0.6;0.4;0" dur="5s" repeatCount="indefinite" begin="0.5s"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0; -15,-560" dur="5s" repeatCount="indefinite" begin="0.5s"/>
+  </path>
   
-  <!-- Heart 3 - Large Left -->
-  <g filter="url(#glow)">
-    <path d="M-5,50 C-5,40 5,30 15,40 C25,30 35,40 35,50 C35,70 15,90 15,90 C15,90 -5,70 -5,50" fill="#D4AF37" opacity="0.35">
-      <animate attributeName="opacity" values="0.1;0.4;0.1" dur="8s" repeatCount="indefinite" begin="4s"/>
-      <animateTransform attributeName="transform" type="translate" values="5,110; 5,-25" dur="14s" repeatCount="indefinite" begin="4s"/>
-    </path>
-  </g>
+  <!-- Small Heart 3 -->
+  <path d="M200,585 C200,580 205,575 210,580 C215,575 220,580 220,585 C220,595 210,605 210,605 C210,605 200,595 200,585" fill="#D4AF37" opacity="0" filter="url(#glow)">
+    <animate attributeName="opacity" values="0;0.65;0.45;0" dur="4.5s" repeatCount="indefinite" begin="1s"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 5,-540" dur="4.5s" repeatCount="indefinite" begin="1s"/>
+  </path>
   
-  <!-- Heart 4 - Small accent -->
-  <g filter="url(#glow)">
-    <path d="M70,60 C70,55 75,50 80,55 C85,50 90,55 90,60 C90,70 80,80 80,80 C80,80 70,70 70,60" fill="#D4AF37" opacity="0.45">
-      <animate attributeName="opacity" values="0.2;0.55;0.2" dur="6s" repeatCount="indefinite" begin="1s"/>
-      <animateTransform attributeName="transform" type="translate" values="-20,100; -20,-15" dur="9s" repeatCount="indefinite" begin="1s"/>
-    </path>
-  </g>
+  <!-- Small Heart 4 -->
+  <path d="M280,595 C280,590 285,585 290,590 C295,585 300,590 300,595 C300,605 290,615 290,615 C290,615 280,605 280,595" fill="#D4AF37" opacity="0" filter="url(#glow)">
+    <animate attributeName="opacity" values="0;0.55;0.35;0" dur="5.5s" repeatCount="indefinite" begin="1.5s"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0; -10,-570" dur="5.5s" repeatCount="indefinite" begin="1.5s"/>
+  </path>
   
-  <!-- Heart 5 - Medium right -->
-  <g filter="url(#glow)">
-    <path d="M80,45 C80,37 88,29 96,37 C104,29 112,37 112,45 C112,61 96,77 96,77 C96,77 80,61 80,45" fill="#D4AF37" opacity="0.3">
-      <animate attributeName="opacity" values="0.15;0.45;0.15" dur="9s" repeatCount="indefinite" begin="3s"/>
-      <animateTransform attributeName="transform" type="translate" values="-30,115; -30,-20" dur="13s" repeatCount="indefinite" begin="3s"/>
-    </path>
-  </g>
+  <!-- Small Heart 5 -->
+  <path d="M350,588 C350,583 355,578 360,583 C365,578 370,583 370,588 C370,598 360,608 360,608 C360,608 350,598 350,588" fill="#D4AF37" opacity="0" filter="url(#glow)">
+    <animate attributeName="opacity" values="0;0.6;0.4;0" dur="4.2s" repeatCount="indefinite" begin="2s"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 8,-555" dur="4.2s" repeatCount="indefinite" begin="2s"/>
+  </path>
+  
+  <!-- Small Heart 6 -->
+  <path d="M80,592 C80,587 85,582 90,587 C95,582 100,587 100,592 C100,602 90,612 90,612 C90,612 80,602 80,592" fill="#D4AF37" opacity="0" filter="url(#glow)">
+    <animate attributeName="opacity" values="0;0.5;0.3;0" dur="6s" repeatCount="indefinite" begin="2.5s"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 12,-580" dur="6s" repeatCount="indefinite" begin="2.5s"/>
+  </path>
+  
+  <!-- Small Heart 7 -->
+  <path d="M250,598 C250,593 255,588 260,593 C265,588 270,593 270,598 C270,608 260,618 260,618 C260,618 250,608 250,598" fill="#D4AF37" opacity="0" filter="url(#glow)">
+    <animate attributeName="opacity" values="0;0.55;0.35;0" dur="5.2s" repeatCount="indefinite" begin="3s"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0; -8,-545" dur="5.2s" repeatCount="indefinite" begin="3s"/>
+  </path>
+  
+  <!-- Small Heart 8 -->
+  <path d="M320,582 C320,577 325,572 330,577 C335,572 340,577 340,582 C340,592 330,602 330,602 C330,602 320,592 320,582" fill="#D4AF37" opacity="0" filter="url(#glow)">
+    <animate attributeName="opacity" values="0;0.6;0.4;0" dur="4.8s" repeatCount="indefinite" begin="0.8s"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 6,-565" dur="4.8s" repeatCount="indefinite" begin="0.8s"/>
+  </path>
 </svg>
