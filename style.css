@@ -1,19 +1,18 @@
 :root {
-    --gold: #B8860B;
-    /* Dark Golden Text */
-    --gold-dim: #D4AF37;
-    /* Gold Accent */
-    --cream: #FFF8E1;
-    /* Soft Gold/Cream Background */
+    --gold: #6A1B9A;
+    /* Changed to Purple */
+    --gold-dim: #8E24AA;
+    /* Lighter Purple */
+    --cream: #E8F5E9;
+    /* Pista Light Background */
     /* Light mode base for card */
-    --cream-light: #E8F5E9;
-    /* Pista Green Card */
-    --text-main: #B8860B;
-    /* Golden Text */
-    --text-accent: #1B5E20;
-    /* Emerald Green (Important) */
-    --heart-color: #1B5E20;
-    /* Emerald Hearts/Accents */
+    --cream-light: #FFFFFF;
+    --text-main: #4A148C;
+    /* Dark Purple Text */
+    --text-accent: #6A1B9A;
+    /* Purple Accent */
+    --heart-color: #E91E63;
+    /* Heart Color */
     --font-heading: 'Cinzel Decorative', cursive;
     --font-script: 'Great Vibes', cursive;
     --font-body: 'Cormorant Garamond', serif;
@@ -45,8 +44,8 @@ body {
     width: 100%;
     height: 100%;
     background-image:
-        radial-gradient(circle at 50% 50%, rgba(184, 134, 11, 0.1) 0%, transparent 60%),
-        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23B8860B' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        radial-gradient(circle at 50% 50%, rgba(106, 27, 154, 0.05) 0%, transparent 60%),
+        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236A1B9A' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     z-index: -1;
 }
 
@@ -108,8 +107,8 @@ body {
 .envelope {
     width: 600px;
     height: 400px;
-    background: #A5D6A7;
-    /* Darker Pista for Envelope Outer */
+    background: #4A148C;
+    /* Dark Purple Envelope */
     position: relative;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     perspective: 1500px;
@@ -123,8 +122,8 @@ body {
     left: 0;
     width: 100%;
     height: 50%;
-    background: #C8E6C9;
-    /* Pista Lid */
+    background: #6A1B9A;
+    /* Lighter Purple Lid */
     transform-origin: top;
     transition: transform 0.8s ease-in-out, z-index 0s 0.4s;
     z-index: 10;
@@ -144,8 +143,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #A5D6A7, #81C784);
-    /* Pista Pocket */
+    background: linear-gradient(135deg, #4A148C, #38006b);
     clip-path: polygon(0 0, 50% 50%, 100% 0, 100% 100%, 0 100%);
     z-index: 5;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -159,7 +157,7 @@ body {
     width: 90%;
     height: 90%;
     background: var(--cream-light);
-    border: 1px solid rgba(184, 134, 11, 0.3);
+    border: 1px solid rgba(106, 27, 154, 0.3);
     border-radius: 4px;
     /* Sharper corners for inside card */
     padding: 20px;
@@ -507,7 +505,6 @@ h2 {
     margin-top: 15px;
     /* Reduced margin */
     letter-spacing: 2px;
-    font-weight: 700;
 }
 
 .names-container {
@@ -557,12 +554,11 @@ h2 {
 
 .parents-line {
     font-size: 1.1rem;
-    color: var(--text-main);
-    font-weight: 700;
+    color: #555;
 }
 
 .parents-line strong {
-    color: var(--text-accent);
+    color: var(--gold);
 }
 
 /* Detail Row for Date/Time */
@@ -647,9 +643,7 @@ p {
     line-height: 1.8;
     margin-bottom: 20px;
     font-size: 1.1rem;
-    color: var(--text-main);
-    font-weight: 700;
-    /* Bold as requested */
+    color: #444;
 }
 
 .arabic-verse {
@@ -683,14 +677,6 @@ p {
 .detail-item {
     margin: 10px 0;
     /* Reduced margin */
-}
-
-.detail-item p {
-    color: var(--text-accent);
-    /* Important: Emerald */
-    font-size: 1.3rem;
-    /* Slightly larger for emphasis */
-    font-weight: 700;
 }
 
 .detail-label {
