@@ -2,10 +2,9 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reception Invitation Syed Farhan Ali & Bareera Zafar</title>
+    <title>Wedding Invitation - Syed Farhan Ali & Bareera Zafar</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,165 +20,133 @@
 
     <div class="bg-pattern"></div>
 
-    <!-- Floating Hearts Overlay -->
-    <div class="hearts-container">
-        <img src="hearts.svg" class="floating-hearts" style="left: 10%; animation-duration: 8s;">
-        <img src="hearts.svg" class="floating-hearts delay-hearts" style="left: 50%;">
-        <img src="hearts.svg" class="floating-hearts delay-hearts-2" style="left: 80%;">
+    <div class="hearts-overlay">
+        <img src="hearts.svg" alt="" class="floating-hearts">
+        <img src="hearts.svg" alt="" class="floating-hearts delay-hearts">
+        <img src="hearts.svg" alt="" class="floating-hearts delay-hearts-2">
     </div>
 
     <div class="container">
-        <!-- The Envelope Wrapper -->
         <div class="envelope-wrapper" id="envelopeWrapper">
             <div class="envelope">
                 <div class="lid" id="lid"></div>
                 <div class="pocket"></div>
+                <div class="click-hint" id="hint">Click to Open</div>
 
-                <!-- Video Card Style Play Button/Seal -->
-                <div class="play-btn" id="seal"></div>
+                <div class="card" id="mainCard">
+                    <!-- Decorative Corners -->
+                    <div class="corner corner-tl"></div>
+                    <div class="corner corner-tr"></div>
+                    <div class="corner corner-bl"></div>
+                    <div class="corner corner-br"></div>
 
-                <div class="text-hint" id="hint">Click to Open</div>
+                    <!-- Bismillah Calligraphy (SVG) -->
+                    <div class="header-ornament">
+                        <svg class="svg-pattern" width="200" height="60" viewBox="0 0 300 100" fill="none"
+                            stroke="#6A1B9A" stroke-width="2">
+                            <!-- Stylized Bismillah Abstract Representation -->
+                            <path d="M150,20 Q180,10 210,30 T270,40 M150,20 Q120,10 90,30 T30,40"
+                                stroke-linecap="round" />
+                            <path d="M150,30 Q150,80 150,80 M140,50 Q160,50 160,50" opacity="0.8" />
+                            <!-- Decorative flourishes -->
+                            <path d="M100,50 C100,70 130,90 150,90 C170,90 200,70 200,50" opacity="0.6" />
+                        </svg>
+                    </div>
+
+                    <div class="content">
+                        <div class="arabic-verse reveal-text delay-1">
+                            وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا
+                            وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً
+                        </div>
+                        <div class="verse-translation reveal-text delay-1">
+                            "And among His Signs is this, that He created for you mates from among yourselves, that ye
+                            may dwell in tranquillity with them, and He has put love and mercy between your (hearts)..."
+                            <br>— Surah Ar-Rum 30:21
+                        </div>
+
+                        <div class="invitation-text reveal-text delay-2">
+                            <h3>WE CORDIALLY INVITE YOU TO THE RECEPTION OF</h3>
+                        </div>
+
+                        <div class="family-info reveal-text delay-3">
+                            <p class="parents-line">Son of <strong>Syed Sajid Ali</strong> & <strong>Fakhra
+                                    Sajid</strong></p>
+                        </div>
+
+                        <div class="names-container reveal-text delay-3">
+                            <h1>Syed Farhan Ali</h1>
+                            <div class="and-symbol">&</div>
+                            <h1>Bareera Zafar</h1>
+                        </div>
+
+                        <div class="details reveal-text delay-4">
+                            <div class="detail-row">
+                                <div class="detail-item">
+                                    <span class="detail-label">Date</span>
+                                    <p>Sunday, 5th April, 2026</p>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Time</span>
+                                    <p>Lunch 2:00 pm</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">📍Venue</span>
+                                <p><a href="https://maps.app.goo.gl/ZpbKsECeVGvvjVri8" target="_blank"
+                                        class="venue-link">Blue Lagoon Jade Hall</a></p>
+                            </div>
+                        </div>
+
+                        <div class="hosts-section reveal-text delay-4">
+                            <p class="hosts-title">Looking Forward</p>
+                            <div class="hosts-grid">
+                                <div class="host-item">
+                                    <span class="host-relation">Father</span>
+                                    <p>Syed Sajid Ali</p>
+                                    <a href="tel:+923022223111">+92 302 2223111</a>
+                                </div>
+                                <div class="host-item">
+                                    <span class="host-relation">Brother</span>
+                                    <p>Muhammad Ali</p>
+                                    <a href="tel:+923365306005">+92 336 5306005</a>
+                                </div>
+                            </div>
+                            <p class="co-hosts">Muhammad Ikram • Syed Ijaz Ali • Syed Wajid Ali</p>
+                        </div>
+
+                        <a href="http://wa.me/+923022223000" target="_blank"
+                            class="rsvp-btn reveal-text delay-5">R.S.V.P</a>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- The Modal Card (Hidden initially) -->
-        <div class="card" id="mainCard">
-            <!-- Ornamental Border Container -->
-            <div class="card-content">
+        <script>
+            const envelopeWrapper = document.getElementById('envelopeWrapper');
+            const lid = document.getElementById('lid');
+            const card = document.getElementById('mainCard');
+            const hint = document.getElementById('hint');
 
-                <!-- Bismillah SVG -->
-                <svg class="bismillah-svg" viewBox="0 0 300 80" fill="none" stroke="#D4AF37" stroke-width="1.5">
-                    <path d="M150,20 Q180,10 210,30 T270,40 M150,20 Q120,10 90,30 T30,40" stroke-linecap="round" />
-                    <path d="M140,45 Q150,55 160,45 M100,50 C100,70 130,90 150,90 C170,90 200,70 200,50"
-                        opacity="0.6" />
-                </svg>
+            envelopeWrapper.addEventListener('click', () => {
+                if (!envelopeWrapper.classList.contains('opened')) {
+                    // 1. Open Lid
+                    lid.classList.add('open');
+                    hint.style.opacity = '0';
 
-                <div class="verse">
-                    وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ
-                    بَيْنَكُم مَّوَدَّةً وَرَحْمَةً
-                </div>
-                <div class="verse-trans">
-                    "And among His Signs is this, that He created for you mates from among yourselves... and He has put
-                    love and mercy between your (hearts)..."
-                    <br>— Surah Ar-Rum 30:21
-                </div>
+                    // 2. Slide Card Out
+                    setTimeout(() => {
+                        card.classList.add('open');
 
-                <h2>WE CORDIALLY INVITE YOU TO THE WEDDING RECEPTION OF</h2>
+                        // 3. Complete Transition - Move card to normal flow
+                        setTimeout(() => {
+                            envelopeWrapper.classList.add('opened');
+                            // Force a redraw or layout adjustment if needed
+                        }, 1200); // Slightly longer than the CSS transition
 
-                <p style="margin: 10px 0; color: #555;">Son of <strong>Syed Sajid Ali</strong> & <strong>Fakhra
-                        Sajid</strong></p>
-
-                <h1>Syed Farhan Ali</h1>
-                <div style="font-family: 'Great Vibes'; font-size: 1.5rem; color: #D4AF37; margin: -10px 0 10px;">&
-                </div>
-                <h1>Bareera Zafar</h1>
-
-                <div class="details-grid">
-                    <div class="detail-box">
-                        <span class="detail-label">DATE</span>
-                        <div class="detail-val">Sunday, 5th April, 2026</div>
-                    </div>
-                    <div class="detail-box">
-                        <span class="detail-label">TIME</span>
-                        <div class="detail-val">Lunch 2:00 pm</div>
-                    </div>
-                </div>
-
-                <div class="detail-box" style="margin-bottom: 20px;">
-                    <span class="detail-label">VENUE</span>
-                    <div class="detail-val">
-                        <a href="https://maps.app.goo.gl/ZpbKsECeVGvvjVri8" target="_blank"
-                            style="color: inherit; text-decoration: none; border-bottom: 1px dashed #D4AF37;">Blue
-                            Lagoon Jade Hall</a>
-                    </div>
-                </div>
-
-                <div style="margin-top: 30px;">
-                    <h2 style="font-size: 1rem; margin-bottom: 15px;">LOOKING FORWARD</h2>
-                    <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
-                        <div>
-                            <span class="detail-label">BROTHER</span>
-                            <div style="font-weight: bold;">Syed Sajid Ali</div>
-                            <a href="tel:+923022223111"
-                                style="color:#D4AF37; text-decoration: none; font-size: 0.9rem;">0302-2223111</a>
-                        </div>
-                        <div>
-                            <span class="detail-label">BROTHER</span>
-                            <div style="font-weight: bold;">Muhammad Ali</div>
-                            <a href="tel:+923365306005"
-                                style="color:#D4AF37; text-decoration: none; font-size: 0.9rem;">0336-5306005</a>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="http://wa.me/+923022223000" target="_blank" class="rsvp-btn">R.S.V.P</a>
-
-                <div style="margin-top: 20px; font-size: 0.8rem; color: #888;">Muhammad Ikram • Syed Ijaz Ali • Syed
-                    Wajid Ali</div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        const envelopeWrapper = document.getElementById('envelopeWrapper');
-        const lid = document.getElementById('lid');
-        const hint = document.getElementById('hint');
-        const seal = document.getElementById('seal');
-        const mainCard = document.getElementById('mainCard');
-
-        function createSparkles(x, y) {
-            for (let i = 0; i < 30; i++) {
-                const sparkle = document.createElement('div');
-                sparkle.classList.add('sparkle');
-
-                // Random position scatter
-                const angle = Math.random() * Math.PI * 2;
-                const dist = Math.random() * 100 + 50;
-                const tx = Math.cos(angle) * dist + 'px';
-                const ty = Math.sin(angle) * dist + 'px';
-
-                sparkle.style.setProperty('--tx', tx);
-                sparkle.style.setProperty('--ty', ty);
-                sparkle.style.left = x + 'px';
-                sparkle.style.top = y + 'px';
-
-                sparkle.style.animation = `sparklePop ${Math.random() * 0.5 + 0.5}s ease-out forwards`;
-                document.body.appendChild(sparkle);
-
-                setTimeout(() => sparkle.remove(), 1000);
-            }
-        }
-
-        function openCard(e) {
-            if (envelopeWrapper.classList.contains('opened')) return;
-
-            // Trigger sparkles at click center or screen center
-            const x = e ? e.clientX : window.innerWidth / 2;
-            const y = e ? e.clientY : window.innerHeight / 2;
-            createSparkles(x, y);
-
-            // 1. Animate Envelope Opening
-            lid.classList.add('open');
-            seal.style.transform = 'scale(0)'; // Hide button
-            hint.style.opacity = '0';
-
-            // 2. Move Envelope Away
-            setTimeout(() => {
-                envelopeWrapper.classList.add('opened');
-
-                // 3. Reveal the Video Card Modal
-                setTimeout(() => {
-                    mainCard.classList.add('open');
-
-                    // Extra sparkles for the grand reveal
-                    setTimeout(() => createSparkles(window.innerWidth / 2, window.innerHeight / 2), 800);
-                }, 300);
-
-            }, 600);
-        }
-
-        envelopeWrapper.addEventListener('click', openCard);
-    </script>
+                    }, 600);
+                }
+            });
+        </script>
 </body>
 
 </html>
